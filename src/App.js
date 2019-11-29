@@ -18,7 +18,7 @@ let Home = () => (
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a><br />
     <Link to={`${INDEX_ROUTE}/dash`}>Dashboard</Link>
   </>
 );
