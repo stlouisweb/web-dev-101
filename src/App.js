@@ -3,14 +3,18 @@ import { Router, Link } from '@reach/router';
 import logo from './logo.svg';
 import './App.css';
 
-// INDEX_ROUTE refers to the base path on github pages 
+// INDEX_ROUTE refers to the base path on github pages https://pages.github.com/
+// include the INDEX_ROUTE in the Router basepath, and in Link "to" URI props.
+// this is a hack for gh-pages.
 const INDEX_ROUTE = '/web-dev-101';
+
 let Home = () => (
-<>
-<p>Edit <code>src/App.js</code> and save to reload.</p>
-<Link to={`${INDEX_ROUTE}/dash`}>Dashboard</Link>
-</>
+  <>
+    <p>Edit <code>src/App.js</code> and save to reload.</p>
+    <Link to={`${INDEX_ROUTE}/dash`}>Dashboard</Link>
+  </>
 );
+
 let Dashboard = () => <p>Dashboard</p>;
 
 function App() {
