@@ -4,7 +4,12 @@ import logo from './logo.svg';
 import './App.css';
 
 const INDEX_ROUTE = '/web-dev-101';
-let Home = () => <p>Edit <code>src/App.js</code> and save to reload.</p>;
+let Home = () => (
+<>
+<p>Edit <code>src/App.js</code> and save to reload.</p>
+<Link to="/dash">Dashboard</Link>
+</>
+);
 let Dashboard = () => <p>Dashboard</p>;
 
 function App() {
