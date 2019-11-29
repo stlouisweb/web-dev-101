@@ -14,9 +14,9 @@ function App() {
       <Link to={`${INDEX_ROUTE}/dash`}>Dashboard</Link>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Router>
-          <Home path={INDEX_ROUTE} />
-          <Dashboard path={`${INDEX_ROUTE}/dash`} />
+        <Router basepath={INDEX_ROUTE}>
+          <Home path="/" />
+          <Dashboard path="/dash" />
         </Router>
         <a
           className="App-link"
