@@ -11,6 +11,14 @@ const INDEX_ROUTE = '/web-dev-101';
 let Home = () => (
   <>
     <p>Edit <code>src/App.js</code> and save to reload.</p>
+    <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
     <Link to={`${INDEX_ROUTE}/dash`}>Dashboard</Link>
   </>
 );
@@ -28,14 +36,6 @@ function App() {
           <Home path="/" />
           <Dashboard path="/dash" />
         </Router>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
