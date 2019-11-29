@@ -23,7 +23,13 @@ let Home = () => (
   </>
 );
 
-let Dashboard = () => <p>Dashboard</p>;
+let Dashboard = () => (
+<>
+<p>Dashboard</p>
+<Link to={`${INDEX_ROUTE}/`}>Home</Link>
+
+</>
+);
 
 function App() {
   return (
